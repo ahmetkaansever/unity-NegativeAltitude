@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    string a = "Trial commit, I hope it works :)";
     [SerializeField] float thrustSpeed = 2;
     [SerializeField] float rotationSpeed = 30;
     Rigidbody rb;
