@@ -6,19 +6,29 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    string a = "Trial commit, I hope it works :)";
+    //PARAMETERS
     [SerializeField] float thrustSpeed = 2;
     [SerializeField] float rotationSpeed = 30;
+    [SerializeField] AudioClip engineSound;
+
+    [SerializeField] ParticleSystem mainThrusterParticle;
+    [SerializeField] ParticleSystem rightThrusterFront;
+    [SerializeField] ParticleSystem rightThrusterBack;
+    [SerializeField] ParticleSystem leftThrusterFront;
+    [SerializeField] ParticleSystem leftThrusterBack;
+    
+
+    //CACHE
     Rigidbody rb;
     AudioSource audioComp;
-    // Start is called before the first frame update
+    
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         audioComp = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         ProcessThrust();
@@ -33,13 +43,18 @@ public class Movement : MonoBehaviour
             //Processing Audio
             if(!audioComp.isPlaying)
             {
-                audioComp.Play();
+                audioComp.PlayOneShot(engineSound);
+            }
+            if(!mainThrusterParticle.isPlaying)
+            {
+                mainThrusterParticle.Play();
             }
             
         }
         else
         {   
             audioComp.Stop();
+            mainThrusterParticle.Stop();
         }
     }
 
@@ -48,10 +63,28 @@ public class Movement : MonoBehaviour
         if(Input.GetKey(KeyCode.A))
         {
             Rotate(1);
+            if(!rightThrusterBack.isPlaying){
+                rightThrusterBack.Play();
+            }
+            if(!rightThrusterFront.isPlaying){
+                rightThrusterFront.Play();
+            }
         }
         else if(Input.GetKey(KeyCode.D))
         {
             Rotate(-1);
+            if(!leftThrusterBack.isPlaying){
+                leftThrusterBack.Play();
+            }
+            if(!leftThrusterFront.isPlaying){
+                leftThrusterFront.Play();
+            }
+        }
+        else{
+            rightThrusterBack.Stop();
+            rightThrusterFront.Stop();
+            leftThrusterBack.Stop();
+            leftThrusterFront.Stop();
         }
     }
 
