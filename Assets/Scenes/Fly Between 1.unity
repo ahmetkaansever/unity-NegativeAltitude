@@ -329,7 +329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2636819947592210791, guid: b300b38ec886ea14a8164a854b901ffe, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.74
+      value: -2.84
       objectReference: {fileID: 0}
     - target: {fileID: 2636819947592210791, guid: b300b38ec886ea14a8164a854b901ffe, type: 3}
       propertyPath: m_LocalPosition.y
@@ -337,7 +337,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2636819947592210791, guid: b300b38ec886ea14a8164a854b901ffe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.92
+      value: 3.93
       objectReference: {fileID: 0}
     - target: {fileID: 2636819947592210791, guid: b300b38ec886ea14a8164a854b901ffe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -871,6 +871,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7632237609628390556, guid: 8f2ee60f2d135b74e8fb764685c73dc4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7cc7993d5a1b0bf4baf5e8e7e27742d1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f2ee60f2d135b74e8fb764685c73dc4, type: 3}
 --- !u!1001 &272984323
@@ -2212,6 +2216,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle
       objectReference: {fileID: 0}
+    - target: {fileID: 7632237609628390556, guid: 8f2ee60f2d135b74e8fb764685c73dc4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7cc7993d5a1b0bf4baf5e8e7e27742d1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f2ee60f2d135b74e8fb764685c73dc4, type: 3}
 --- !u!1001 &743916039
@@ -2286,10 +2294,6 @@ PrefabInstance:
     - target: {fileID: 615093248096637796, guid: 17422eebcb514fd4db7a894b0b98af96, type: 3}
       propertyPath: m_Name
       value: Launch Pad
-      objectReference: {fileID: 0}
-    - target: {fileID: 615093248096637796, guid: 17422eebcb514fd4db7a894b0b98af96, type: 3}
-      propertyPath: m_TagString
-      value: Friendly
       objectReference: {fileID: 0}
     - target: {fileID: 615093248096637800, guid: 17422eebcb514fd4db7a894b0b98af96, type: 3}
       propertyPath: m_RootOrder
@@ -5503,6 +5507,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obstacle (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7632237609628390556, guid: 8f2ee60f2d135b74e8fb764685c73dc4, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 7cc7993d5a1b0bf4baf5e8e7e27742d1, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f2ee60f2d135b74e8fb764685c73dc4, type: 3}
 --- !u!1001 &1881423867
