@@ -3283,22 +3283,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -180
       objectReference: {fileID: 0}
-    - target: {fileID: 8947114804849278522, guid: 0ce1ee8e71965fa4381c395642ed0cfa, type: 3}
-      propertyPath: period
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8947114804849278522, guid: 0ce1ee8e71965fa4381c395642ed0cfa, type: 3}
-      propertyPath: movementVector.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8947114804849278522, guid: 0ce1ee8e71965fa4381c395642ed0cfa, type: 3}
-      propertyPath: movementVector.y
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8947114804849278522, guid: 0ce1ee8e71965fa4381c395642ed0cfa, type: 3}
-      propertyPath: movementVector.z
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 8947114804849278523, guid: 0ce1ee8e71965fa4381c395642ed0cfa, type: 3}
       propertyPath: m_Name
       value: Falling Obstacle
